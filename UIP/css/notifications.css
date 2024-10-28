@@ -1,0 +1,101 @@
+/* General reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.screen-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 400px; /* Limits the width to match content */
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px;
+    min-height: 100vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+header h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4c2784;
+    margin-bottom: 20px;
+}
+
+.notification-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.notification-item {
+    display: flex;
+    align-items: flex-start;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+
+.purple-dot { background-color: #6c63ff; }
+.yellow-dot { background-color: #ffd600; }
+.blue-dot { background-color: #00bcd4; }
+.orange-dot { background-color: #ff9800; }
+
+.notification-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.description {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Bottom navigation */
+.bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #f8f8f8;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.nav-icon {
+    color: #4c2784;
+    text-decoration: none;
+    font-size: 24px;
+    text-align: center;
+    flex: 1;
+}

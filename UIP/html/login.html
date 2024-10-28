@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome Back</h1>
+        <h2>Login</h2>
+        <img src="../assets/illustration.png" alt="Illustration" class="illustration">
+        <form id="loginForm" onsubmit="return validateLogin()">
+            <div class="input-group">
+                <input type="email" id="email" placeholder="Email" required>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" placeholder="Password" required>
+                <i class="toggle-password" onclick="togglePassword()">👁️</i>
+            </div>
+            <div class="forgot-password">
+                <a href="#">Forgot Password?</a>
+            </div>
+            <button type="submit" class="btn-login">Login</button>
+        </form>
+        <p>Don't have an account? <a href="../html/signup.html">Sign Up</a></p>
+    </div>
+
+    <script src="../js/login.js"></script>
+</body>
+</html>

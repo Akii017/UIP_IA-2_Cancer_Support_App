@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Dashboard</title>
+    <link rel="stylesheet" href="../css/find.css">
+</head>
+<body>
+    <div class="dashboard">
+        <header>
+            <button class="back-button" onclick="goBack()">&larr;</button>
+            <h1>Hello, <span class="username">Julie</span>!</h1>
+            <button class="bmi-button" onclick="goToBMI()">Calculate BMI</button>
+        </header>
+        <p class="status">You haven’t checked out the app recently. Do some workouts.</p>
+        
+        <section class="metrics">
+            <div class="metric heart-rate" onclick="showHeartRate()">
+                <p>Heart Rate</p>
+                <span class="value">78 <small>bpm</small></span>
+            </div>
+            <div class="metric exercise" onclick="showExercise()">
+                <p>Exercise</p>
+                <span class="value">24 <small>min</small></span>
+            </div>
+            <div class="metric walking" onclick="showWalking()">
+                <p>Walking</p>
+                <span class="value">10 <small>km</small></span>
+            </div>
+            <div class="metric sleep" onclick="showSleep()">
+                <p>Sleep</p>
+                <span class="value">8 <small>hrs</small></span>
+            </div>
+        </section>
+
+        <section class="upcoming">
+            <p>Upcoming</p>
+            <div class="event">
+                <span class="date">December 4, 2024</span>
+                <span class="description">Consultation with Dr. James</span>
+            </div>
+        </section>
+
+        <footer>
+            <a href="../html/index.html"><button class="footer-button">🏠</button></a>
+            <a href="../html/dashboard.html"><button class="footer-button">📊</button></a>
+            <a href="../html/notifications.html"><button class="footer-button">🔔</button></a>
+            <a href="../html/settings.html"><button class="footer-button">⚙️</button></a>
+        </footer>
+    </div>
+
+    
+
+    <script src="../js/find.js"></script>
+</body>
+</html>

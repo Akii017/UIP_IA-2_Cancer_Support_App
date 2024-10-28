@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="../css/bmi.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <!-- Updated back button to link to findyourself.html -->
+            <a href="../html/finding-yourself.html" class="back-btn">&#x2190;</a>
+            <h1>BMI Calculator</h1>
+            <div class="dropdown">
+                <button class="dropbtn">Last Week &#9662;</button>
+            </div>
+        </header>
+
+        <div class="input-section">
+            <div class="input-box">
+                <label for="height">Height</label>
+                <input type="number" id="height" placeholder="170" /> <span>cm</span>
+            </div>
+            <div class="input-box">
+                <label for="weight">Weight</label>
+                <input type="number" id="weight" placeholder="72" /> <span>kg</span>
+            </div>
+        </div>
+
+        <div class="bmi-result">
+            <h2>Body Mass Index (BMI)</h2>
+            <div id="bmi-value">0.0</div>
+            <div id="bmi-status">-</div>
+        </div>
+
+        <div class="body-measurements">
+            <h2>Body Measurements</h2>
+            <p>Last checked <span id="checked-date">2 Days Ago</span></p>
+            <div class="measurement">
+                <label for="chest">Chest (in)</label>
+                <input type="number" id="chest" placeholder="44.5" /> <span>&#9650;</span>
+            </div>
+            <div class="measurement">
+                <label for="waist">Waist (in)</label>
+                <input type="number" id="waist" placeholder="34" /> <span>&#9660;</span>
+            </div>
+            <div class="measurement">
+                <label for="hip">Hip (in)</label>
+                <input type="number" id="hip" placeholder="42.5" />
+            </div>
+        </div>
+
+        <div class="body-shape">
+            <button id="shape-btn">Inverted Triangle Body Shape</button>
+        </div>
+
+    </div>
+
+    <script src="../js/bmi.js"></script>
+</body>
+</html>

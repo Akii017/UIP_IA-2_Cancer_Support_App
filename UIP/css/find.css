@@ -1,0 +1,140 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.dashboard {
+  max-width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.back-button {
+  font-size: 1.5rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.bmi-button {
+  background-color: #e8c4ff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.status {
+  font-size: 0.9rem;
+  color: #777;
+  margin: 10px 0;
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.metric {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #f1f4ff;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.metric:hover {
+  transform: scale(1.05);
+}
+
+.heart-rate {
+  background-color: #ffe2e6;
+  color: #ff5a5f;
+  animation: beat 1s infinite;
+}
+
+.exercise {
+  background-color: #ede7fe;
+  color: #9267ff;
+  animation: exercise 2s infinite;
+}
+
+.walking {
+  background-color: #d6f4f2;
+  color: #30c4a5;
+  animation: walk 1s infinite;
+}
+
+.sleep {
+  background-color: #e2e8ff;
+  color: #6a82fb;
+  animation: snore 3s infinite;
+}
+
+@keyframes beat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+@keyframes exercise {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(5deg); }
+}
+
+@keyframes walk {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(5px); }
+}
+
+@keyframes snore {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(2px); }
+}
+
+.upcoming {
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+.event {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f1f4ff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.footer-button {
+  font-size: 1.2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}

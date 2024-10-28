@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <h1>Health Overview</h1>
+            <div class="header-icons">
+                <button class="search-btn">
+                    <img src="../assets/search-icon.png" alt="Search">
+                </button>
+                <button class="bell-btn">
+                    <img src="../assets/bell-icon.png" alt="Notifications" class="notification-icon">
+                </button>
+            </div>
+        </header>
+
+        <!-- Health Cards Section -->
+        <div class="health-cards">
+            <div class="health-card blood-sugar">
+                <div class="card-header">
+                    <img src="../assets/blood-sugar-icon.png" alt="Blood Sugar">
+                    <p>Blood Sugar</p>
+                </div>
+                <div class="card-value">
+                    <h2>80</h2>
+                    <span>mg/dL</span>
+                </div>
+                <p class="status normal">Normal</p>
+                <div class="chart">
+                    <img src="../assets/blood-sugar-chart.png" alt="Chart">
+                </div>
+            </div>
+
+            <div class="health-card blood-pressure">
+                <div class="card-header">
+                    <img src="../assets/blood-pressure-icon.png" alt="Blood Pressure">
+                    <p>Blood Pressure</p>
+                </div>
+                <div class="card-value">
+                    <h2>102</h2>
+                    <span>/ 72 mmHg</span>
+                </div>
+                <p class="status normal">Normal</p>
+                <div class="chart">
+                    <img src="../assets/blood-pressure-chart.png" alt="Chart">
+                </div>
+            </div>
+
+            <div class="health-card heart-rate">
+                <div class="card-header">
+                    <img src="../assets/heart-rate-icon.png" alt="Heart Rate">
+                    <p>Heart Rate</p>
+                </div>
+                <div class="card-value">
+                    <h2>98</h2>
+                    <span>bpm</span>
+                </div>
+                <p class="status normal">Normal</p>
+                <div class="chart">
+                    <img src="../assets/heart-rate-chart.png" alt="Chart">
+                </div>
+            </div>
+        </div>
+
+        <!-- Activity Section -->
+        <div class="activity-section">
+            <h2>Activity Growth</h2>
+            <select>
+                <option>Jan 2021</option>
+                <option>Feb 2021</option>
+            </select>
+            <div class="activity-chart">
+                <img src="../assets/activity-chart.png" alt="Activity Growth Chart">
+            </div>
+        </div>
+
+        <!-- Scrollbar -->
+        <div class="scrollbar"></div>
+    </div>
+
+    <!-- Footer with bottom navigation icons -->
+    <footer>
+        <nav class="bottom-nav">
+            <a href="../html/index.html" class="nav-icon"><i class="icon-home">&#x1F3E0;</i></a>
+            <a href="../html/dashboard.html" class="nav-icon"><i class="icon-chart">&#x1F4CA;</i></a>
+            <a href="../html/notifications.html" class="nav-icon"><i class="icon-notification">&#x1F514;</i></a>
+            <a href="../html/settings.html" class="nav-icon"><i class="icon-settings">&#9881;</i></a>
+        </nav>
+    </footer>
+</body>
+</html>
+    

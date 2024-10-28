@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="../css/settings.css">
+    <!-- Add JavaScript for functionality -->
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1 class="settings-title">Settings</h1>
+        </header>
+
+        <!-- Profile Section -->
+        <div class="profile-section">
+            <div class="profile-pic-container">
+                <img src="../assets/profile-pic.png" alt="Profile Picture" class="profile-pic">
+                <button class="edit-btn" id="editBtn">
+                    <img src="../assets/edit-icon.png" alt="Edit Icon">
+                </button>
+            </div>
+            <div class="profile-info">
+                <h2 class="profile-name" id="profileName">Julia Mario</h2>
+                <p class="profile-email" id="profileEmail">juliamario@mail.com</p>
+            </div>
+        </div>
+
+        <!-- Settings Menu -->
+        <div class="settings-menu">
+            <a href="../html/account.html" class="settings-item">
+                <span class="item-icon">👤</span>
+                <span>Account</span>
+                <span class="item-arrow">➔</span>
+            </a>
+            <a href="../html/notifications.html" class="settings-item">
+                <span class="item-icon">🔔</span>
+                <span>Notification</span>
+                <span class="item-arrow">➔</span>
+            </a>
+            <a href="../html/appearance.html" class="settings-item">
+                <span class="item-icon">👁️</span>
+                <span>Appearance</span>
+                <span class="item-arrow">➔</span>
+            </a>
+            <a href="../html/privacy-security.html" class="settings-item">
+                <span class="item-icon">🔒</span>
+                <span>Privacy & Security</span>
+                <span class="item-arrow">➔</span>
+            </a>
+            <a href="../html/sound.html" class="settings-item">
+                <span class="item-icon">🔊</span>
+                <span>Sound</span>
+                <span class="item-arrow">➔</span>
+            </a>
+
+            <!-- Language button with dropdown -->
+            <div class="dropdown">
+                <a href="#" class="settings-item" id="languageBtn">
+                    <span class="item-icon">🌐</span>
+                    <span>Language</span>
+                    <span class="item-arrow">➔</span>
+                </a>
+                <div id="languageDropdown" class="dropdown-content">
+                    <a href="#" class="language-option">English</a>
+                    <a href="#" class="language-option">Spanish</a>
+                    <a href="#" class="language-option">French</a>
+                    <a href="#" class="language-option">German</a>
+                    <a href="#" class="language-option">Italian</a>
+                    <a href="#" class="language-option">Chinese</a>
+                </div>
+            </div>
+
+            <!-- Logout Button -->
+            <a href="#" class="settings-item logout-item" id="logoutBtn">
+                <span class="item-icon">🚪</span>
+                <span>Logout</span>
+                <span class="item-arrow">➔</span>
+            </a>
+        </div>
+
+        <!-- Bottom Navigation Bar -->
+        <footer>
+            <nav class="bottom-nav">
+                <a href="../html/index.html" class="nav-icon"><i class="icon-home">&#x1F3E0;</i></a>
+                <a href="../html/dashboard.html" class="nav-icon"><i class="icon-chart">&#x1F4CA;</i></a>
+                <a href="../html/notifications.html" class="nav-icon"><i class="icon-notification">&#x1F514;</i></a>
+                <a href="../html/settings.html" class="nav-icon active"><i class="icon-settings">&#9881;</i></a>
+            </nav>
+        </footer>
+    </div>
+
+    <!-- Popup for editing name and email -->
+    <div id="editPopup" class="popup">
+        <div class="popup-content">
+            <h2>Edit Profile</h2>
+            <label for="editName">Name:</label>
+            <input type="text" id="editName" value="Julia Mario">
+            <label for="editEmail">Email:</label>
+            <input type="email" id="editEmail" value="juliamario@mail.com">
+            <div class="popup-buttons">
+                <button id="saveChanges">Save Changes</button>
+                <button id="discardChanges">Discard</button>
+                <button id="closePopup">Close</button> <!-- Close button added -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Logout Popup -->
+    <div id="logoutPopup" class="popup">
+        <div class="popup-content">
+            <h2>You are successfully logged out!!</h2>
+        </div>
+    </div>
+
+    <script src="../js/settings.js"></script>
+    <script src="../js/language.js"></script>
+</body>
+</html>

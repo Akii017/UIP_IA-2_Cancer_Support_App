@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info Form</title>
+    <link rel="stylesheet" href="../css/info.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Please fill in the following details</h2>
+        <img src="../assets/illustration.png" alt="Cartoon" class="image">
+        
+        <form id="infoForm">
+            <label for="cancerType">Select Cancer Type:</label>
+            <select id="cancerType">
+                <option value="" disabled selected>Select Item</option>
+                <option value="Breast Cancer">Breast Cancer</option>
+                <option value="Lung Cancer">Lung Cancer</option>
+                <option value="Prostate Cancer">Prostate Cancer</option>
+                <option value="Skin Cancer">Skin Cancer</option>
+                <option value="Leukemia">Leukemia</option>
+            </select>
+
+            <label for="role">Select Role:</label>
+            <select id="role">
+                <option value="" disabled selected>Select Item</option>
+                <option value="Doctor">Doctor</option>
+                <option value="Patient">Patient</option>
+                <option value="Nurse">Nurse</option>
+                <option value="Researcher">Researcher</option>
+                <option value="Volunteer">Volunteer</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="../js/info.js"></script>
+</body>
+</html>
